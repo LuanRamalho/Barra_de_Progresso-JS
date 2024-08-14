@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.skills{
+    width:100%;
+    max-width: 600px;
+    padding: 0 20px;
+
+}
+
+.skill_name{
+    font-size: 20px;
+    color: white;
+    margin: 20px 0;
+}
+
+.skill_bar{
+    height: 15px;
+    background: rgb(27, 27, 27);
+    border-radius: 15px;
+}
+
+.skill_per{
+    height: 15px;
+    background: brown;
+    border-radius: 15px;
+    position: relative;
+    animation: animate 4.5s;
+
+}
+
+@keyframes animate{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
